@@ -29,7 +29,7 @@ public class GenericKeywordBasedTextClassifier {
 	public static boolean PRINT_DEBUG = false;
 
 	public static boolean NORMALIZE_STRING = true;
-	public static boolean SMALLCASE_STRING = true;
+	public static boolean LOWERCASE_STRING = true;
 	public static boolean FORCE_RANKING = false;
 
 	// Used vars
@@ -281,7 +281,7 @@ public class GenericKeywordBasedTextClassifier {
 				string = string.replaceAll("[(;)|(,)|(:)|(!)|(?)|(.)|(*)|(\\)|(/)|(+)|(\\-)|(_)|(|)|(\n)|(\r)|(\t)|(\b)]", SPACE_CHAR);
 				string = string.replaceAll("[^(a-z)|(A-Z)|(0-9)|( )]", EMPTY_STRING);
 			}
-			if (SMALLCASE_STRING) {
+			if (LOWERCASE_STRING) {
 				string = string.toLowerCase();
 			}
 			// Remove multiples spaces

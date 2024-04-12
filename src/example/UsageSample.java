@@ -1,6 +1,5 @@
 package example;
 
-import example.Data;
 import classifier.Document;
 import classifier.GenericKeywordBasedTextClassifier;
 import classifier.Score;
@@ -14,7 +13,7 @@ public class UsageSample {
         GenericKeywordBasedTextClassifier.USE_TIEBREAKERS_CRITERIA = true;
         GenericKeywordBasedTextClassifier.FORCE_RANKING = false;
         GenericKeywordBasedTextClassifier.NORMALIZE_STRING = true;
-        GenericKeywordBasedTextClassifier.SMALLCASE_STRING = true;
+        GenericKeywordBasedTextClassifier.LOWERCASE_STRING = true;
         GenericKeywordBasedTextClassifier.PRINT_DEBUG = true;
 
         for (Document doc : Data.getDocuments()) {
